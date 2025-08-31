@@ -2,7 +2,7 @@
 
 This project implements a comprehensive music genre classification system using both **tabular** (audio features) and **image-based** (spectrograms) approaches. The system can classify music into 10 different genres: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock.
 
-## 🎯 Project Overview
+##  Project Overview
 
 The system implements three main approaches:
 
@@ -10,7 +10,7 @@ The system implements three main approaches:
 2. **Image-based Approach with Transfer Learning**: Uses pre-trained VGG16 on spectrogram images
 3. **Custom CNN Approach**: Uses a custom convolutional neural network on spectrogram images
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Task 6/
@@ -25,33 +25,7 @@ Task 6/
 └── images_original/                    # Spectrogram images (10 genres)
 ```
 
-## 🚀 Quick Start
-
-### 1. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Run the Complete Pipeline
-
-```bash
-python music_genre_classification.py
-```
-
-### 3. Run Step-by-Step Implementation
-
-```bash
-python step_by_step_implementation.py
-```
-
-### 4. Examine Feature Files
-
-```bash
-python examine_features.py
-```
-
-## 🔍 Step-by-Step Implementation
+Step-by-Step Implementation
 
 ### Step 1: Tabular Approach
 - Loads pre-extracted audio features from CSV files
@@ -75,7 +49,7 @@ python examine_features.py
 - Identifies the best performing method
 - Provides detailed performance metrics
 
-## 🎵 Audio Features Used
+##  Audio Features Used
 
 The tabular approach extracts and uses:
 
@@ -85,7 +59,7 @@ The tabular approach extracts and uses:
 - **Tempo**: Beat tracking information
 - **Zero Crossing Rate**: Measure of noisiness
 
-## 🖼️ Image Processing
+## 🖼Image Processing
 
 The image-based approaches:
 
@@ -94,7 +68,7 @@ The image-based approaches:
 - Normalize pixel values to [0, 1] range
 - Apply data augmentation (rotation, shifts, flips)
 
-## 🧠 Model Architectures
+##  Model Architectures
 
 ### Tabular Models
 - **Random Forest**: Ensemble of decision trees
@@ -104,7 +78,7 @@ The image-based approaches:
 - **VGG16 Transfer Learning**: Pre-trained on ImageNet
 - **Custom CNN**: 4 convolutional layers + dense layers
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 The system evaluates models using:
 
@@ -113,7 +87,7 @@ The system evaluates models using:
 - **Confusion Matrix**: Detailed error analysis
 - **Cross-validation**: Robust performance estimation
 
-## 🔧 Customization Options
+##  Customization Options
 
 ### Modify Model Parameters
 ```python
@@ -146,7 +120,7 @@ def extract_audio_features(self, audio_file, duration=30):
     return features
 ```
 
-## 📈 Expected Results
+##  Expected Results
 
 Based on typical performance for this dataset:
 
@@ -156,7 +130,7 @@ Based on typical performance for this dataset:
 
 *Note: Actual performance may vary based on data quality and model tuning*
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -172,7 +146,7 @@ Based on typical performance for this dataset:
 3. **Adjust Parameters**: Modify learning rate, batch size, etc.
 4. **Data Augmentation**: Increase augmentation for better generalization
 
-## 🔬 Advanced Usage
+##  Advanced Usage
 
 ### Ensemble Methods
 ```python
@@ -195,14 +169,14 @@ audio_files = ['path/to/audio1.wav', 'path/to/audio2.wav']
 features = [classifier.extract_audio_features(f) for f in audio_files]
 ```
 
-## 📚 References
+##  References
 
 - **GTZAN Dataset**: The dataset used for this project
 - **Librosa**: Audio and music analysis library
 - **TensorFlow/Keras**: Deep learning framework
 - **Scikit-learn**: Machine learning library
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to contribute by:
 - Improving model architectures
@@ -210,10 +184,10 @@ Feel free to contribute by:
 - Optimizing performance
 - Adding new evaluation metrics
 
-## 📄 License
+## 📄License
 
 This project is part of the Elevvo Internship Task 6.
 
 ---
 
-**Happy Music Classification! 🎵🎶**
+**Happy Music Classification! **
