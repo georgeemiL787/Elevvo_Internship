@@ -1,10 +1,10 @@
 # Student Performance Prediction Project
 
-## 🎓 Project Overview
+##  Project Overview
 
 This project implements a comprehensive machine learning system to predict students' exam scores based on various academic, personal, and environmental factors. The system includes data analysis, model training, deployment pipeline, and a production-ready web application.
 
-## 🎯 Objectives
+##  Objectives
 
 - Perform comprehensive data cleaning and exploratory data analysis
 - Build and evaluate polynomial regression models for exam score prediction
@@ -12,42 +12,42 @@ This project implements a comprehensive machine learning system to predict stude
 - Create a production-ready web application with modern UI
 - Provide real-time predictions through an intuitive interface
 
-## 📊 Dataset
+## Dataset
 
 - **Source**: Student Performance Factors (Kaggle)
 - **Size**: 6,609 records with 20 features
 - **Target Variable**: Exam_Score
 - **Features**: Study hours, attendance, parental involvement, access to resources, extracurricular activities, sleep hours, previous scores, motivation level, internet access, tutoring sessions, family income, teacher quality, school type, peer influence, physical activity, learning disabilities, parental education level, distance from home, and gender.
 
-## 🏗️ Project Structure
+## 🏗 Project Structure
 
 ```
 Task 1/
-├── 📁 model/                          # Trained model artifacts
+├──  model/                          # Trained model artifacts
 │   ├── poly_model.pkl                 # Trained polynomial regression model
 │   ├── poly_scaler.pkl                # Feature scaler
 │   ├── poly_features.pkl              # Polynomial feature transformer
 │   ├── label_encoders.pkl             # Label encoders for categorical variables
 │   ├── onehot_encoder.pkl             # One-hot encoder
 │   └── feature_columns.pkl            # Feature column names
-├── 📁 deployment/                     # Deployment configuration
+├── deployment/                     # Deployment configuration
 │   ├── deployment_config.json         # Model configuration and metadata
 │   ├── deployment_report.txt          # Deployment summary report
 │   └── production_model.py            # Production model class
-├── 📁 templates/                      # Web application templates
+├──  templates/                      # Web application templates
 │   ├── index.html                     # Main prediction interface
 │   └── about.html                     # About page
-├── 📄 StudentPerformanceFactors.csv   # Original dataset
-├── 📄 Task_1.ipynb                    # Jupyter notebook with analysis
-├── 📄 deploy_model_simple.py          # Model training and deployment pipeline
-├── 📄 app_production.py               # Production Flask web application
-├── 📄 production_model.py             # Production model loader
-├── 📄 requirements.txt                # Python dependencies
-├── 📄 README.md                       # This documentation
-└── 📄 output.png                      # Analysis visualization output
+├──  StudentPerformanceFactors.csv   # Original dataset
+├── Task_1.ipynb                    # Jupyter notebook with analysis
+├── deploy_model_simple.py          # Model training and deployment pipeline
+├──  app_production.py               # Production Flask web application
+├──  production_model.py             # Production model loader
+├── requirements.txt                # Python dependencies
+├──  README.md                       # This documentation
+└──  output.png                      # Analysis visualization output
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -67,7 +67,7 @@ python app_production.py
 ### 4. Access the Application
 Open your browser and navigate to: `http://localhost:5000`
 
-## 🔧 Detailed Setup Instructions
+##  Detailed Setup Instructions
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -91,7 +91,7 @@ Open your browser and navigate to: `http://localhost:5000`
    ```
 6. **Access the application** at `http://localhost:5000`
 
-## 📈 Model Performance
+##  Model Performance
 
 ### Polynomial Regression Model
 - **R² Score**: 0.9803 (Excellent)
@@ -105,7 +105,7 @@ Open your browser and navigate to: `http://localhost:5000`
 - **Feature Scaling**: StandardScaler for optimal performance
 - **Feature Selection**: Correlation-based feature selection
 
-## 🌐 Web Application Features
+##  Web Application Features
 
 ### Main Interface (`/`)
 - **Modern UI**: Beautiful gradient design with Bootstrap 5
@@ -125,7 +125,7 @@ Open your browser and navigate to: `http://localhost:5000`
 - **`/health`** (GET): System health check
 - **`/model-info`** (GET): Model information and status
 
-## 🔄 Deployment Pipeline
+##  Deployment Pipeline
 
 ### `deploy_model_simple.py` - Complete ML Pipeline
 
@@ -171,7 +171,7 @@ A Flask-based web application that serves the trained model:
 - `/health`: Health check endpoint
 - `/model-info`: Model information endpoint
 
-## 📊 Data Analysis Features
+##  Data Analysis Features
 
 ### Exploratory Data Analysis
 - **Distribution Analysis**: Target variable and feature distributions
@@ -193,7 +193,7 @@ A Flask-based web application that serves the trained model:
 - **Residual Analysis**: Model diagnostic plots
 - **Feature Importance**: Analysis of feature contributions
 
-## 🎨 User Interface Features
+##  User Interface Features
 
 ### Design Elements
 - **Modern Gradient Background**: Purple gradient theme
@@ -215,7 +215,7 @@ A Flask-based web application that serves the trained model:
 - **Real-time Feedback**: Immediate response to user actions
 - **Error Recovery**: Clear error messages and recovery options
 
-## 🔧 Technical Architecture
+##  Technical Architecture
 
 ### Model Architecture
 ```
@@ -234,7 +234,7 @@ app_production.py → model/ artifacts + templates/
 templates/ → static assets (Bootstrap, Font Awesome)
 ```
 
-## 📋 Requirements
+##  Requirements
 
 ### Python Dependencies
 ```
@@ -253,7 +253,7 @@ jupyter>=1.0.0
 - **Storage**: 100MB free space
 - **Browser**: Modern web browser with JavaScript enabled
 
-## 🚀 Deployment Options
+##  Deployment Options
 
 ### Local Development
 ```bash
@@ -277,7 +277,7 @@ docker run -p 5000:5000 student-predictor
 - **Google Cloud**: Deploy on App Engine
 - **Azure**: Deploy on App Service
 
-## 🔍 Monitoring and Maintenance
+##  Monitoring and Maintenance
 
 ### Health Monitoring
 - **Health Check Endpoint**: `/health`
@@ -295,7 +295,7 @@ docker run -p 5000:5000 student-predictor
 - **Feature Updates**: Update feature engineering as needed
 - **Security Updates**: Regular dependency updates
 
-## 🧪 Testing
+##  Testing
 
 ### Model Testing
 ```bash
@@ -319,7 +319,7 @@ curl -X POST http://localhost:5000/predict \
 - **Mobile Testing**: Responsive design verification
 - **Accessibility Testing**: Screen reader compatibility
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates:
 - **Complete ML Pipeline**: From data to deployment
@@ -330,7 +330,7 @@ This project demonstrates:
 - **Model Management**: Model versioning and artifact management
 - **System Monitoring**: Health checks and performance monitoring
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 ### Potential Improvements
 - **Model Versioning**: Implement model version control
@@ -348,7 +348,7 @@ This project demonstrates:
 - **MLOps Pipeline**: Automated model deployment
 - **Model Explainability**: SHAP or LIME integration
 
-## 🤝 Contributing
+##  Contributing
 
 ### Development Setup
 1. Fork the repository
@@ -363,17 +363,17 @@ This project demonstrates:
 - Include type hints where appropriate
 - Write comprehensive tests
 
-## 📄 License
+##  License
 
 This project is created for educational purposes as part of the Huawei internship program.
 
-## 👥 Authors
+##  Authors
 
 - **George Emil** - Huawei Internship Student
 - **Project Type**: Machine Learning & Web Development
 - **Institution**: Huawei
 
-## 📞 Support
+##  Support
 
 For questions or issues:
 1. Check the troubleshooting section below
@@ -381,7 +381,7 @@ For questions or issues:
 3. Test the health endpoint
 4. Contact the development team
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
