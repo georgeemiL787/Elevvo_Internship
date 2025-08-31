@@ -19,7 +19,7 @@ This project implements a comprehensive machine learning system to predict stude
 - **Target Variable**: Exam_Score
 - **Features**: Study hours, attendance, parental involvement, access to resources, extracurricular activities, sleep hours, previous scores, motivation level, internet access, tutoring sessions, family income, teacher quality, school type, peer influence, physical activity, learning disabilities, parental education level, distance from home, and gender.
 
-## 🏗 Project Structure
+##  Project Structure
 
 ```
 Task 1/

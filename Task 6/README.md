@@ -59,7 +59,7 @@ The tabular approach extracts and uses:
 - **Tempo**: Beat tracking information
 - **Zero Crossing Rate**: Measure of noisiness
 
-## 🖼Image Processing
+## Image Processing
 
 The image-based approaches:
 
@@ -184,7 +184,7 @@ Feel free to contribute by:
 - Optimizing performance
 - Adding new evaluation metrics
 
-## 📄License
+## License
 
 This project is part of the Elevvo Internship Task 6.
 
