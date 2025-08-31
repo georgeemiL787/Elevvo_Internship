@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Student Performance Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 900px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+        
+        .model-performance {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: #2ecc71;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .btn-back {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 10px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="header">
+                <h1><i class="fas fa-info-circle"></i> About the Model</h1>
+                <p>Learn about our advanced polynomial regression model</p>
+            </div>
+            
+            <div class="model-performance">
+                <h3><i class="fas fa-trophy"></i> Model Performance</h3>
+                <h2>R² Score: 0.9803</h2>
+                <p class="mb-0">Our polynomial regression model achieves exceptional accuracy in predicting student exam scores</p>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-brain"></i> How It Works</h3>
+                <p>This predictor uses a sophisticated polynomial regression model that captures non-linear relationships between various student factors and exam performance. The model was trained on a comprehensive dataset of 6,607 student records with 20 different features.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-chart-line"></i> Key Features Used</h3>
+                <ul class="feature-list">
+                    <li><strong>Academic Factors:</strong> Hours studied, attendance rate, previous scores, tutoring sessions</li>
+                    <li><strong>Personal Factors:</strong> Sleep hours, physical activity, motivation level</li>
+                    <li><strong>Environmental Factors:</strong> Access to resources, internet access, teacher quality</li>
+                    <li><strong>Social Factors:</strong> Parental involvement, peer influence, extracurricular activities</li>
+                    <li><strong>Demographic Factors:</strong> Family income, school type, gender, parental education</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-cogs"></i> Technical Details</h3>
+                <ul class="feature-list">
+                    <li><strong>Algorithm:</strong> Polynomial Regression (Degree 2)</li>
+                    <li><strong>Preprocessing:</strong> Standard scaling, label encoding, one-hot encoding</li>
+                    <li><strong>Feature Engineering:</strong> Polynomial features and interaction terms</li>
+                    <li><strong>Validation:</strong> 5-fold cross-validation with R² scoring</li>
+                    <li><strong>Performance:</strong> RMSE: 2.34, MAE: 1.87</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-lightbulb"></i> Use Cases</h3>
+                <ul class="feature-list">
+                    <li><strong>Educational Planning:</strong> Help students understand factors affecting their performance</li>
+                    <li><strong>Intervention Strategies:</strong> Identify areas where students need support</li>
+                    <li><strong>Resource Allocation:</strong> Guide educational institutions in resource planning</li>
+                    <li><strong>Parental Guidance:</strong> Provide insights for parents to support their children</li>
+                </ul>
+            </div>
+            
+            <div class="text-center">
+                <a href="/" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Back to Predictor
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "model_info": {
+    "name": "Student Performance Polynomial Regression",
+    "version": "1.0.0",
+    "algorithm": "Polynomial Regression (Degree 2)",
+    "deployment_date": "2025-08-27 21:33:19",
+    "performance": {
+      "r2_score": 0.7144981676570316,
+      "rmse": 2.1063014402396116,
+      "mae": 0.6861285266457681
+    }
+  },
+  "features": {
+    "continuous": [
+      "Hours_Studied",
+      "Attendance",
+      "Sleep_Hours",
+      "Previous_Scores",
+      "Tutoring_Sessions",
+      "Physical_Activity"
+    ],
+    "ordinal": [
+      "Parental_Involvement",
+      "Access_to_Resources",
+      "Motivation_Level",
+      "Family_Income",
+      "Teacher_Quality",
+      "Peer_Influence",
+      "Parental_Education_Level",
+      "Distance_from_Home"
+    ],
+    "nominal": [
+      "Extracurricular_Activities",
+      "Internet_Access",
+      "School_Type",
+      "Gender",
+      "Learning_Disabilities"
+    ],
+    "total_features": 15,
+    "polynomial_features": 135
+  },
+  "preprocessing": {
+    "scaling": "StandardScaler",
+    "encoding": "LabelEncoder + OneHotEncoder",
+    "polynomial_degree": 2,
+    "feature_selection": "Correlation-based"
+  },
+  "data_info": {
+    "training_samples": 5102,
+    "testing_samples": 1276,
+    "original_features": 20,
+    "final_features": 15
+  }
+}

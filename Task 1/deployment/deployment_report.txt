@@ -1,0 +1,29 @@
+STUDENT PERFORMANCE MODEL DEPLOYMENT REPORT
+==================================================
+
+MODEL INFORMATION:
+Name: Student Performance Polynomial Regression
+Version: 1.0.0
+Algorithm: Polynomial Regression (Degree 2)
+Deployment Date: 2025-08-27 21:33:19
+
+PERFORMANCE METRICS:
+R2 Score: 0.7145
+RMSE: 2.11
+MAE: 0.69
+
+FEATURE INFORMATION:
+Continuous Features: 6
+Ordinal Features: 8
+Nominal Features: 5
+Total Features: 15
+Polynomial Features: 135
+
+DATA INFORMATION:
+Training Samples: 5102
+Testing Samples: 1276
+Original Features: 20
+Final Features: 15
+
+DEPLOYMENT STATUS: SUCCESSFUL
+Model is ready for production use.
